@@ -12,8 +12,8 @@ const Sidebar = () => {
       <div className="nav-bar">
         <Link className="logo" to="/">
           <img src={LogoM} alt="logo" />
-          <img className="sub-logo" src={LogoSubtitle} alt="logo" />
         </Link>
+        <span className="subtitle">Mayur</span>
         <nav>
           <NavLink exact="true" activeclassname="active" to="/">
             <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
