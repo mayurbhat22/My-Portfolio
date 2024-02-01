@@ -37,12 +37,20 @@ const Sidebar = () => {
         </nav>
         <ul>
           <li>
-            <a target="_blank" rel="noreferrer" href="">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/mayur-bhat22/"
+            >
               <FontAwesomeIcon icon={faLinkedin} color="#4d4d4de" />
             </a>
           </li>
           <li>
-            <a target="_blank" rel="noreferrer" href="">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/mayurbhat22"
+            >
               <FontAwesomeIcon icon={faGithub} color="#4d4d4de" />
             </a>
           </li>

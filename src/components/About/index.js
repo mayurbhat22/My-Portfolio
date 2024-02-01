@@ -39,7 +39,7 @@ const About = () => {
         <p>
           I am pursuing my Masters in Computer Science, at Indiana University,
           Bloomington where I am improving one design problem at a time and
-          being naturally curious abiut it.
+          being naturally curious about it.
         </p>
         <p>
           I am a self taught developer, I have worked on various projects

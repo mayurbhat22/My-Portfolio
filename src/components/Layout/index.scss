@@ -35,7 +35,8 @@
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
 }
-.about-page {
+.about-page,
+.contact-page {
   .text-zone {
     position: absolute;
     top: 50%;
@@ -77,10 +78,10 @@
       }
     }
     p {
-      font-style: 35px;
+      font-size: 16px;
       color: #fff;
       font-family: sans-serif;
-      font-weight: 300;
+      font-weight: 400;
       min-width: fit-content;
       animation: pulse 1s;
 

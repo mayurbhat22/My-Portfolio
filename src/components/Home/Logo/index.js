@@ -1,9 +1,9 @@
 import './index.scss'
-import LogoM from '../../../assets/images/M.png'
+import DPMayur from '../../../assets/images/result.png'
 const Logo = () => {
   return (
-    <div className="logo-container">
-      <img className="solid-logo" alt="M" />
+    <div className="image-container">
+      <img className="solid-image" src={DPMayur} alt="M" />
     </div>
   )
 }
