@@ -57,13 +57,7 @@ const Home = () => {
             /> */}
           </h1>
           <div class="typewriter-container">
-            <div class="typewriter-effect software-engineer">
-              Software Engineer
-            </div>
-            <div class="typewriter-effect developer">
-              Full Stack Software Developer
-            </div>
-            <div class="typewriter-effect database">Database Engineer</div>
+            <span className="typewriter-effect"></span>
           </div>
 
           <h2>MS CS student at Indiana University, Bloomington </h2>
@@ -72,7 +66,6 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
-        <Logo />
       </div>
     </>
   )

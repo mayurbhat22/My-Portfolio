@@ -1,0 +1,58 @@
+.experience-section {
+  height: 45vh;
+  width: 80vw;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+
+  .full-time,
+  .internship {
+    width: 450px;
+    height: 500px;
+    background-color: #2b466e;
+    box-shadow: -6px -6px 8px #101416;
+    transition: all 0.2s ease-in-out;
+
+    .company-name,
+    span {
+      margin-left: 10px;
+      font-size: 16px;
+      color: #fff;
+      font-family: sans-serif;
+      font-weight: 400;
+      min-width: fit-content;
+      animation: pulse 1s;
+    }
+
+    .job-description {
+      width: 420px;
+      height: 400px;
+      font-size: 14px;
+      color: #fff;
+      font-family: sans-serif;
+      font-weight: 400;
+      padding: 5px 10px;
+      overflow: scroll;
+
+      /* For Webkit (Chrome, Safari) */
+      &::-webkit-scrollbar {
+        width: 0px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #2b466e; /* color of the tracking area */
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: #555; /* color when hover */
+      }
+
+      /* For Firefox */
+      scrollbar-width: thin;
+      scrollbar-color: #888 #2b466e; /* thumb and track color */
+    }
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

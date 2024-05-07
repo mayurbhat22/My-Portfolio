@@ -1,3 +1,4 @@
+@import 'typed';
 .home-page {
   position: relative;
   .text-zone {
@@ -5,7 +6,7 @@
     left: 10%;
     top: 50%;
     transform: translateY(-50%);
-    width: 40%;
+    width: 50%;
     max-height: 90%;
   }
   h1 {
@@ -49,106 +50,17 @@
       margin-top: 20px;
       letter-spacing: 2px;
       overflow: hidden;
-      border-right: 3px #fff solid;
       white-space: nowrap;
-    }
-    .software-engineer {
-      width: 30%;
-      position: absolute;
-      opacity: 0;
-      animation: typing1 15s steps(25, end) infinite;
-      animation-delay: 1.5s;
-    }
-    .developer {
-      width: 50%;
-      position: absolute;
-      opacity: 0;
-      animation: typing2 15s steps(25, end) infinite;
-      animation-delay: 6.5s;
-    }
-    .database {
-      width: 30%;
-      position: absolute;
-      opacity: 0;
-      animation: typing3 15s steps(25, end) infinite;
-      animation-delay: 11.5s;
-    }
-
-    .type:nth-child(1) {
-      animation: typing1 15s steps(25, end) infinite;
-    }
-
-    .type:nth-child(2) {
-      animation: typing2 15s steps(25, end) infinite;
-      animation-delay: 5s;
-    }
-
-    .type:nth-child(3) {
-      animation: typing3 15s steps(30, end) infinite;
-      animation-delay: 10s;
-    }
-
-    @keyframes typing1 {
-      0%,
-      33% {
-        width: 0;
-        opacity: 0;
-      }
-      5% {
-        opacity: 1;
-      }
-      25% {
-        width: 60%;
-      }
-      32% {
-        opacity: 1;
-      }
-      100% {
-        width: 0;
-        opacity: 0;
-      }
-    }
-
-    @keyframes typing2 {
-      0%,
-      33% {
-        width: 0;
-        opacity: 0;
-      }
-      5% {
-        opacity: 1;
-      }
-      25% {
-        width: 97%;
-      }
-      32% {
-        opacity: 1;
-      }
-      100% {
-        width: 0;
-        opacity: 0;
-      }
-    }
-
-    @keyframes typing3 {
-      0%,
-      33% {
-        width: 0;
-        opacity: 0;
-      }
-      5% {
-        opacity: 1;
-      }
-      25% {
-        width: 62%;
-      }
-      32% {
-        opacity: 1;
-      }
-      100% {
-        width: 0;
-        opacity: 0;
-      }
+      @include typed(
+        'Software Engineer',
+        'Full Stack Software Developer',
+        'Database Engineer',
+        1,
+        (
+          caret-width: 3px,
+          caret-space: 2px,
+        )
+      );
     }
   }
   h2 {
